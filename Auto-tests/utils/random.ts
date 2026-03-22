@@ -7,10 +7,6 @@ export function getRandomItem<T>(items: T[]): T {
     return items[randomIndex];
 }
 
-
-
-
-
 export async function selectRandomOptionLabel(
     selectLocator: Locator,
     filterEmpty = true
@@ -23,7 +19,6 @@ export async function selectRandomOptionLabel(
     await selectLocator.selectOption({ label: selectedLabel });
     return selectedLabel;
 }
-
 
 export function getRandomInt(max: number): number {
     if (max <= 0) throw new Error('max должно быть больше 0');
